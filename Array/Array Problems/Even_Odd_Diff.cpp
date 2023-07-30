@@ -1,3 +1,4 @@
+// Find the diff betweem the sum of the odds and evens in a given array
 #include <iostream>
 using namespace std;
 int main(){
