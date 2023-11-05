@@ -1,0 +1,1 @@
+{"name":"Local: prob","url":"d:\\c++ practice\\DSA\\Hashing\\prob.cpp","tests":[{"id":1692650771042,"input":"15\n1 2 3 7 7 1 3 1 1 2 7 3 9 3 1","output":"Max: 1-->5\nMin: 9-->1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\c++ practice\\DSA\\Hashing\\prob.cpp","group":"local","local":true}

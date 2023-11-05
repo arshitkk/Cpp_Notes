@@ -1,0 +1,1 @@
+{"name":"Local: QuickSort","url":"d:\\c++ practice\\DSA\\Array\\Sorting\\QuickSort.cpp","tests":[{"id":1695069122598,"input":"10\n1 5 2 9 8 3 7 6 4 10","output":"1 2 3 4 5 6 7 8 9 10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\c++ practice\\DSA\\Array\\Sorting\\QuickSort.cpp","group":"local","local":true}

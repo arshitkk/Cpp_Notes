@@ -1,0 +1,1 @@
+{"name":"Local: SecoundLargestElement","url":"d:\\c++ practice\\DSA\\Array\\Array Problems\\SecoundLargestElement.cpp","tests":[{"id":1696276263071,"input":"7\n1 5 4 6 2 3 9","output":"6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\c++ practice\\DSA\\Array\\Array Problems\\SecoundLargestElement.cpp","group":"local","local":true}
