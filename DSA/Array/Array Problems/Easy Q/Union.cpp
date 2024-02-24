@@ -27,7 +27,7 @@ std::vector<int> Union2(int arr1[], int arr2[], int n1, int n2)
 
     while (i < n1 && j < n2)
     {
-        if (arr1[i] <= arr2[j])
+        if (arr1[i] < arr2[j])
         {
             if (v.empty() || v.back() != arr1[i])
             {
@@ -57,13 +57,11 @@ std::vector<int> Union2(int arr1[], int arr2[], int n1, int n2)
     // If there are remaining elements in either array, add them to the vector
     while (i < n1)
     {
+        if (v.empty() || v.back() != arr1[i])
         {
-            if (v.empty() || v.back() != arr1[i])
-            {
-                v.push_back(arr1[i]);
-            }
-            i++;
+            v.push_back(arr1[i]);
         }
+        i++;
     }
     while (j < n2)
     {

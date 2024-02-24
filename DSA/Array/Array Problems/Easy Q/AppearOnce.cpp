@@ -39,7 +39,7 @@ int once2(vector<int> &arr)
     }
     // Declare hash array of size maxi+1
 
-    vector<int> hash(maxx + 1, 0);
+    vector<int> hash(maxx + 1);
     // And hash the given array:
 
     for (int i = 0; i < n; i++)
@@ -104,7 +104,7 @@ int main()
         arr.push_back(num);
     }
 
-    cout << once4(arr);
+    cout << once2(arr);
 
     // for (auto it : v)
     // {

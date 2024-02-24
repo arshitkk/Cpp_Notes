@@ -1,62 +1,47 @@
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
-
-// bruteforce (all posible subarray's sum) 
-// TC = O(n^3)
-int LongestSubArray1(vector<int>&arr, long long K){
-    int len;
-    for(int i = 0; i<arr.size(); i++){
-        for(int j = i; j<arr.size(); j++){
-            long long sum = 0;
-            for(int k = i; k<=j; k++){
-                sum = sum+arr[k];
-            }
-            if (sum == K){
-                len = max(len, j-i+1);
-            }
-        }
+// Majority Element
+// Bruteforce Approach
+// TC -> O(n^2)
+int Maj_Elem(int arr[], int n)
+{
+    int cnt = 0;
+    int el;
+    for (int i = 0; i < n; i++)
+    {
+        if (cnt == 0)
+            el = arr[i];
+        else if (el == arr[i])
+            cnt++;
+        else
+            cnt--;
     }
-    return len;
-}
 
-// bruteforce (same as above) 
-// TC = O(n^2)
-int LongestSubArray2(vector<int>&arr, long long K){
-    int len;
-    for(int i = 0; i<arr.size(); i++){
-            long long sum = 0;
-        for(int j = i; j<arr.size(); j++){
-                sum = sum+arr[j];
-
-            if (sum == K){
-                len = max(len, j-i+1);
-            }
-        }
+    int cnt2 = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == el)
+            cnt2++;
     }
-    return len;
+    if (cnt2 > n / 2)
+        return el;
 }
-
 
 int main()
 {
-    int n,k;
-    cin >> n;
 
-    vector<int> arr;
+    int n;
+    // cout<<"Enter the size of an array: ";
+    cin >> n;
+    int arr[n];
     for (int i = 0; i < n; i++)
     {
-        int num;
-        cin >> num;
-        arr.push_back(num);
+        cin >> arr[i];
     }
-    cin>>k;
-
-    cout << LongestSubArray2(arr, k);
-
-    // for (auto it : v)
+    cout << Maj_Elem(arr, n);
+    // for (auto it : i)
     // {
     //     cout << it << " ";
     // }
-    return 0;
 }

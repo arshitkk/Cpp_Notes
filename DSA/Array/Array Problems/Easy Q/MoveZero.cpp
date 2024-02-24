@@ -37,12 +37,12 @@ void ZeroO(int arr[], int n){
  int j = -1;
  for (int i = 0; i<n; i++){
     if (arr[i]==0){
-        j=arr[i];
+        j=i;
         break;
     }
   }
 
-for(int i = j+1; j<n; j++){
+for(int i = j+1; i<n; i++){
     if (arr[i]!=0){
         swap(arr[j],arr[i]);
         j++;
@@ -63,7 +63,7 @@ int main()
         cin >> arr[i];
     }
 
-    ZeroB(arr, n);
+    ZeroO(arr, n);
 
     for (int i = 0; i < n; i++)
     {
