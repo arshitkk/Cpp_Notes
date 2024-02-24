@@ -1,0 +1,1 @@
+{"name":"Local: LongestSubArray(+)","url":"d:\\c++ practice\\DSA\\Array\\Array Problems\\Easy Q\\LongestSubArray(+).cpp","tests":[{"id":1707656997050,"input":"5\n2 3 5 9 1\n10","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\c++ practice\\DSA\\Array\\Array Problems\\Easy Q\\LongestSubArray(+).cpp","group":"local","local":true}
